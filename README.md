@@ -3,6 +3,8 @@ towhee+elasticsearch实现本地以图搜图
 
 elasticsearch版本为 7.4.2
 
+github地址：[https://github.com/xjhqre/towhee-img-search](https://github.com/xjhqre/towhee-img-search)
+
 elasticsearch安装方法参考我的这篇文章：[全文检索-ElasticSearch](https://blog.csdn.net/xjhqre/article/details/124553312)
 
 
@@ -42,6 +44,6 @@ PUT imgsearch
 
 
 
-## 演示
+## 效果演示
 
 ![image-20230408195553888](https://typora-xjhqre.oss-cn-hangzhou.aliyuncs.com/img/202304081956985.png)

@@ -13,9 +13,9 @@ elasticsearch安装方法参考我的这篇文章：[全文检索-ElasticSearch]
 
 二、创建 elasticsearch 索引。
 
-```json
-# 创建索引结构
 PUT imgsearch
+
+```json
 {
   "mappings": {
     "properties": {

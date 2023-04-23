@@ -14,8 +14,8 @@ import image_decode_custom
 
 cnt = 0  # 图片处理计数
 es = Elasticsearch([{'host': config.elasticsearch_url, 'port': config.elasticsearch_port}], timeout=3600)
-image_decode_custom = image_decode_custom.ImageDecodeCV2()
-
+image_decode = image_decode_custom.ImageDecodeCV2()
+image_embedding = ops.image_embedding.timm(model_name='resnet50')
 
 # Load image path
 def load_image(folderPath):
@@ -37,7 +37,7 @@ def es_insert(filePath, vec):
 
     global cnt
     cnt += 1
-    print("当前图片：" + imgUrl + " ---> " + str(cnt))
+    print("当前图片：" + fileName + " ---> " + str(cnt))
 
 def extract(galleryPath):
     for path in glob(galleryPath):
